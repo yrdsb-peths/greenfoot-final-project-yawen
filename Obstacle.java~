@@ -1,0 +1,9 @@
+import greenfoot.*;
+public class Obstacle extends Actor
+{
+    private int counter = =;
+    public void act() 
+    {
+        counter++;
+    }    
+}
