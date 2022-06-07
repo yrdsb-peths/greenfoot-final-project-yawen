@@ -99,7 +99,7 @@ public class Elephant extends Actor
         // check if elephant - pokemon is touching xiaozhi
         if(isTouching(bonusForElephant.class)) {
             removeTouching(bonusForElephant.class);
-            MyWorld world = (MyWorld) getWorld();
+            PokemonWorld world = (PokemonWorld) getWorld();
             speed += 3;
             world.increaseElephantSpeed();
         }
@@ -108,9 +108,9 @@ public class Elephant extends Actor
     public void getBomb()
     {
         if(isTouching(Bomb.class)) {
-            GameOver gameOverWorld = new GameOver();
+            PTGameOver gameOverWorld = new PTGameOver();
             Greenfoot.setWorld(gameOverWorld);
-            GameOver.isBomb.setValue("The chaser touches the bomb.");
+            PTGameOver.isBomb.setValue("The chaser touches the bomb.");
         }
     }
     

@@ -1,28 +1,28 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Description here.
+ * Write a description of class Return here.
  * 
  * @author Zhang
  * @version June 2
  */
-public class Description extends Actor
+public class WSReturn extends Actor
 {
     /**
-     * Act - do whatever the Description wants to do. This method is called whenever
+     * Act - do whatever the Return wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
         // Add your action code here.
-        if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new WSGameDes());
+         if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new WSTitleScreen());
         }
     }
     
-    public Description()
+    public WSReturn()
     {
-        GreenfootImage img = new GreenfootImage("book.png");
+        GreenfootImage img = new GreenfootImage("return.png");
         img.scale(img.getWidth()/7, img.getHeight()/7);
         setImage(img);
     }

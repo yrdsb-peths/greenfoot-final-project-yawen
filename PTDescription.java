@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Description here.
  * 
- * @author Zhang
- * @version June 2
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Description extends Actor
+public class PTDescription extends Actor
 {
     /**
      * Act - do whatever the Description wants to do. This method is called whenever
@@ -16,11 +16,11 @@ public class Description extends Actor
     {
         // Add your action code here.
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new WSGameDes());
+            Greenfoot.setWorld(new PTGameDes());
         }
     }
     
-    public Description()
+    public PTDescription()
     {
         GreenfootImage img = new GreenfootImage("book.png");
         img.scale(img.getWidth()/7, img.getHeight()/7);
