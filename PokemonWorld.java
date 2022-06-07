@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  */
-public class MyWorld extends World
+public class PokemonWorld extends World
 {
     // can print these on screen later.
     public int score = 0;
@@ -16,7 +16,7 @@ public class MyWorld extends World
     * Constructor for objects of class MyWorld.
     * 
     */
-    public MyWorld()
+    public PokemonWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
@@ -68,7 +68,7 @@ public class MyWorld extends World
             timeLabel.setValue("Survived " + gameTime.millisElapsed()/1000 + " seconds.");
         }
         if(score == 32) {
-            GameOver gameOverWorld = new GameOver();
+            PTGameOver gameOverWorld = new PTGameOver();
             Greenfoot.setWorld(gameOverWorld);
         }
         if(score % 4 == 0) {

@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Zhang
  * @version May 27
  */
-public class GameDes extends World
+public class PTGameDes extends World
 {
     Label descriptionLabel0 = new Label("Chaser Pikachu", 50);
     Label descriptionLabel1 = new Label("Pikachu is the chaser, catch the grey pokemon !", 20);
@@ -20,7 +20,7 @@ public class GameDes extends World
      * Constructor for objects of class GameDes.
      * 
      */
-    public GameDes()
+    public PTGameDes()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
@@ -33,7 +33,7 @@ public class GameDes extends World
         addObject(descriptionLabel5, 300, 240);
         addObject(descriptionLabel6, 300, 270);
         
-        Return back = new Return();
+        PTReturn back = new PTReturn();
         addObject(back, 560, 297);
     }
 }

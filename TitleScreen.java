@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TitleScreen extends World
 {
-    Label titleLabel = new Label("Let's Game", 50);
+    Label titleLabel = new Label("Pokemon Tag", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
     /**
      * Constructor for objects of class TitleScreen.
@@ -31,7 +31,7 @@ public class TitleScreen extends World
     {
         // Start the game if user presses the space bar.
         if(Greenfoot.isKeyDown("space")) {
-            MyWorld gameWorld = new MyWorld();
+            PokemonWorld gameWorld = new PokemonWorld();
             Greenfoot.setWorld(gameWorld);
         }
     }
@@ -48,7 +48,7 @@ public class TitleScreen extends World
         Apple apple = new Apple();
         addObject(apple, 100, 200);
         
-        Description description = new Description();
+        PTDescription description = new PTDescription();
         addObject(description, 560, 290);
     }
 }

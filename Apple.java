@@ -102,7 +102,7 @@ public class Apple extends Actor
         // check if apple is touching elephant
         if(isTouching(Elephant.class)) {
             removeTouching(Elephant.class);
-            MyWorld world = (MyWorld) getWorld();
+            PokemonWorld world = (PokemonWorld) getWorld();
             world.spawnApple();
             world.increaseScore();
             // elephantSound.play();
@@ -124,7 +124,7 @@ public class Apple extends Actor
         // check if elephant - pokemon is touching xiaozhi
         if(isTouching(bonusForElephant.class)) {
             removeTouching(bonusForElephant.class);
-            MyWorld world = (MyWorld) getWorld();
+            PokemonWorld world = (PokemonWorld) getWorld();
             speed += 3;
             world.increaseAppleSpeed();
         }
@@ -133,9 +133,9 @@ public class Apple extends Actor
     public void getBomb()
     {
         if(isTouching(Bomb.class)) {
-            GameOver gameOverWorld = new GameOver();
+            PTGameOver gameOverWorld = new PTGameOver();
             Greenfoot.setWorld(gameOverWorld);
-            GameOver.isBomb.setValue("The chaser touches the bomb.");
+            PTGameOver.isBomb.setValue("The chaser touches the bomb.");
         }
     }
     

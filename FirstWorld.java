@@ -21,6 +21,14 @@ public class FirstWorld extends World
         addObject(welcomeLabel, 300, 100);
         
         Apple apple = new Apple();
-        addObject(apple, 98, 219);
+        addObject(apple, 100, 200);
+    }
+    
+    public void act()
+    {
+        if(Greenfoot.isKeyDown("up")) {
+            TitleScreen titleScreen = new TitleScreen();
+            Greenfoot.setWorld(titleScreen);
+        }
     }
 }
