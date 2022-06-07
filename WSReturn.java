@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Return here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Zhang
+ * @version June 2
  */
-public class PTReturn extends Actor
+public class WSReturn extends Actor
 {
     /**
      * Act - do whatever the Return wants to do. This method is called whenever
@@ -16,11 +16,11 @@ public class PTReturn extends Actor
     {
         // Add your action code here.
          if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new PTTitleScreen());
+            Greenfoot.setWorld(new WSTitleScreen());
         }
     }
     
-    public PTReturn()
+    public WSReturn()
     {
         GreenfootImage img = new GreenfootImage("return.png");
         img.scale(img.getWidth()/7, img.getHeight()/7);

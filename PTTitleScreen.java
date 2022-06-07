@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Zhang
  * @version May 26
  */
-public class TitleScreen extends World
+public class PTTitleScreen extends World
 {
     Label titleLabel = new Label("Pokemon Tag", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
@@ -14,7 +14,7 @@ public class TitleScreen extends World
      * Constructor for objects of class TitleScreen.
      * 
      */
-    public TitleScreen()
+    public PTTitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1); 

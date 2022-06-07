@@ -22,12 +22,22 @@ public class FirstWorld extends World
         
         Apple apple = new Apple();
         addObject(apple, 100, 200);
+        
+        Bear bear = new Bear();
+        // GreenfootImage img = new GreenfootImage("images/shoot0.png");
+        // img.scale(img.getWidth()/2, img.getHeight()/2);
+        // setImage(img);
+        addObject(bear, 300, 200);
     }
     
     public void act()
     {
-        if(Greenfoot.isKeyDown("up")) {
-            TitleScreen titleScreen = new TitleScreen();
+        if(Greenfoot.isKeyDown("1")) {
+            PTTitleScreen titleScreen = new PTTitleScreen();
+            Greenfoot.setWorld(titleScreen);
+        }
+        if(Greenfoot.isKeyDown("2")) {
+            WSTitleScreen titleScreen = new WSTitleScreen();
             Greenfoot.setWorld(titleScreen);
         }
     }
