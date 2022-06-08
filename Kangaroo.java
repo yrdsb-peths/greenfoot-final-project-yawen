@@ -58,6 +58,8 @@ public class Kangaroo extends Actor
             {
                 if(!dodgeButton()) {
                     alive = false;
+                    HMGameOver gameOverWorld = new HMGameOver();
+                    Greenfoot.setWorld(gameOverWorld);
                 }
                 // Game Over ************ create new world.
             }

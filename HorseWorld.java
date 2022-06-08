@@ -35,4 +35,9 @@ public class HorseWorld extends World
         score += 1;
         scoreLabel.setValue("In-air: " + score);
     }
+    
+    public static int getScore()
+    {
+        return score;
+    }
 }
