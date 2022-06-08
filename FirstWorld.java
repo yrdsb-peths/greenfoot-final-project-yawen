@@ -24,10 +24,10 @@ public class FirstWorld extends World
         addObject(apple, 100, 200);
         
         Bear bear = new Bear();
-        // GreenfootImage img = new GreenfootImage("images/shoot0.png");
-        // img.scale(img.getWidth()/2, img.getHeight()/2);
-        // setImage(img);
-        addObject(bear, 300, 200);
+        addObject(bear, 250, 200);
+        
+        Kangaroo kangaroo = new Kangaroo();
+        addObject(kangaroo, 400, 200);
     }
     
     public void act()
@@ -38,6 +38,10 @@ public class FirstWorld extends World
         }
         if(Greenfoot.isKeyDown("2")) {
             WSTitleScreen titleScreen = new WSTitleScreen();
+            Greenfoot.setWorld(titleScreen);
+        }
+        if(Greenfoot.isKeyDown("3")) {
+            HMTitleScreen titleScreen = new HMTitleScreen();
             Greenfoot.setWorld(titleScreen);
         }
     }

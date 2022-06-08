@@ -4,9 +4,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Write a description of class Description here.
  * 
  * @author Zhang
- * @version June 2
+ * @version June 7
  */
-public class Description extends Actor
+public class HMDescription extends Actor
 {
     /**
      * Act - do whatever the Description wants to do. This method is called whenever
@@ -16,11 +16,11 @@ public class Description extends Actor
     {
         // Add your action code here.
         if (Greenfoot.mouseClicked(this)) {
-            Greenfoot.setWorld(new WSGameDes());
+            Greenfoot.setWorld(new HMGameDes());
         }
     }
     
-    public Description()
+    public HMDescription()
     {
         GreenfootImage img = new GreenfootImage("book.png");
         img.scale(img.getWidth()/7, img.getHeight()/7);

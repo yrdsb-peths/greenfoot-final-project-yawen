@@ -4,17 +4,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Title Screen.
  * 
  * @author Zhang
- * @version June 2
+ * @version June 7
  */
-public class WSTitleScreen extends World
+public class HMTitleScreen extends World
 {
-    Label titleLabel = new Label("Let's Game", 50);
+    Label titleLabel = new Label("Horse Marathon", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
     /**
      * Constructor for objects of class TitleScreen.
      * 
      */
-    public WSTitleScreen()
+    public HMTitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1); 
@@ -31,8 +31,7 @@ public class WSTitleScreen extends World
     {
         // Start the game if user presses the space bar.
         if(Greenfoot.isKeyDown("space")) {
-            WombatWorld gameWorld = new WombatWorld();
-            gameWorld.setLife(3);
+            HorseWorld gameWorld = new HorseWorld();
             Greenfoot.setWorld(gameWorld);
         }
     }
@@ -43,10 +42,10 @@ public class WSTitleScreen extends World
      */
     private void prepare()
     {
-        Bear bear = new Bear();
-        addObject(bear, 460, 110);
+        Kangaroo horse = new Kangaroo();
+        addObject(horse, 102, 245);
         
-        WSDescription description = new WSDescription();
+        HMDescription description = new HMDescription();
         addObject(description, 560, 290);
     }
 }

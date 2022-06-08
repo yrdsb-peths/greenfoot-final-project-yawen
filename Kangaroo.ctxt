@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Kangaroo
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Kangaroo()
+comment3.params=
+comment3.target=void\ animateHorse()
+comment4.params=
+comment4.target=boolean\ jumpButton()
+comment5.params=
+comment5.target=boolean\ dodgeButton()
+numComments=6
