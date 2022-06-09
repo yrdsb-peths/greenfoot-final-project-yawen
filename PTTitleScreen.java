@@ -50,5 +50,8 @@ public class PTTitleScreen extends World
         
         PTDescription description = new PTDescription();
         addObject(description, 560, 290);
+        
+        Home home = new Home();
+        addObject(home, 35, 35);
     }
 }

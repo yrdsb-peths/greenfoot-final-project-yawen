@@ -48,5 +48,8 @@ public class WSTitleScreen extends World
         
         WSDescription description = new WSDescription();
         addObject(description, 560, 290);
+        
+        Home home = new Home();
+        addObject(home, 35, 35);
     }
 }

@@ -47,5 +47,8 @@ public class HMTitleScreen extends World
         
         HMDescription description = new HMDescription();
         addObject(description, 560, 290);
+        
+        Home home = new Home();
+        addObject(home, 35, 35);
     }
 }
