@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameDes here.
+ * Pokemon Tag Game Description.
  * 
  * @author Zhang
  * @version May 27
@@ -22,9 +22,9 @@ public class PTGameDes extends World
      */
     public PTGameDes()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
         
+        // Game Descriptions.
         addObject(descriptionLabel0, 300, 70);
         addObject(descriptionLabel1, 300, 120);
         addObject(descriptionLabel2, 300, 150);
@@ -33,6 +33,7 @@ public class PTGameDes extends World
         addObject(descriptionLabel5, 300, 240);
         addObject(descriptionLabel6, 300, 270);
         
+        // Return arrow.
         PTReturn back = new PTReturn();
         addObject(back, 560, 297);
     }

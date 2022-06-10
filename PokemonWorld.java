@@ -1,17 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
+ * Pokemon Tag Game World.
+ * 
+ * @author Zhang
+ * @version May 20
  */
 public class PokemonWorld extends World
 {
-    // can print these on screen later.
     public int score = 0;
     Label scoreLabel;
     Label appleSpeedLabel;
     Label elephantSpeedLabel;
     Label timeLabel;
-    
     public static SimpleTimer gameTime = new SimpleTimer();
+    
     /**
     * Constructor for objects of class MyWorld.
     * 
@@ -35,18 +38,20 @@ public class PokemonWorld extends World
         elephantSpeedLabel = new Label(0, 25);
         addObject(elephantSpeedLabel, 450, 80);
         
+        // Create a chaser survived time label.
         timeLabel = new Label(0, 20);
         addObject(timeLabel, 130, 300);
         
+        // Spawn Elephant.
         Elephant e = new Elephant();
         addObject(e, 300, 350);
         
+        // Spawn Apple.
         Apple a = new Apple();
         addObject(a, Greenfoot.getRandomNumber(300), Greenfoot.getRandomNumber(300));
-        
-        // spawnApple();
     }
     
+    // Spawn new runner to the Game World.
     public void spawnApple()
     {
         int x = Greenfoot.getRandomNumber(580);
@@ -56,37 +61,45 @@ public class PokemonWorld extends World
         addObject(elephant, x, y);
     }
     
+    // Increase Score and check score status.
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
+        // 6 --> spawn speed+
         if(score % 6 == 0) {
             bonusForElephant xiaozhi = new bonusForElephant();
             addObject(xiaozhi, Greenfoot.getRandomNumber(580), Greenfoot.getRandomNumber(320));
         }
+        // 1 --> print survived time
         if(score % 1 == 0) {
             timeLabel.setValue("Survived " + gameTime.millisElapsed()/1000 + " seconds.");
         }
+        // 32 --> game over
         if(score == 32) {
             PTGameOver gameOverWorld = new PTGameOver();
             Greenfoot.setWorld(gameOverWorld);
         }
+        // 4 --> spawn bomb
         if(score % 4 == 0) {
             Bomb bomb = new Bomb();
             addObject(bomb, Greenfoot.getRandomNumber(580), 0);
         }
     }
     
+    // Increase Pikachu speed.
     public void increaseAppleSpeed()
     {
         appleSpeedLabel.setValue("Chaser Speed: " + Apple.getSpd());
     }
     
+    // Increase Elephatn speed.
     public void increaseElephantSpeed()
     {
         elephantSpeedLabel.setValue("Runner Speed: " + Elephant.getSpd());
     }
     
+    // Get runner survived time.
     public static int getGameTime()
     {
         return gameTime.millisElapsed()/1000;

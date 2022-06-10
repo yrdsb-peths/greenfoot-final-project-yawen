@@ -1,12 +1,18 @@
 import greenfoot.*;
 
+/**
+ * Horse Marathon Game World.
+ * 
+ * @author Zhang
+ * @version June 7
+ */
 public class HorseWorld extends World
 {
-    // private int worldSpeed = 45;
     public static int score = 0;
     public static Label scoreLabel;
     public static Label liveLabel;
     
+    // Add tree into the world.
     public void act()
     {
         if(true)
@@ -15,6 +21,10 @@ public class HorseWorld extends World
         }
     }
     
+    /**
+     * Constructor for objects of class TitleScreen.
+     * 
+     */
     public HorseWorld()
     {
         super(600, 330, 1);
@@ -27,22 +37,22 @@ public class HorseWorld extends World
         addObject(liveLabel, 50, 50);
         
         increaseScore();
-        
-        // Greenfoot.setSpeed(worldSpeed);
-        //setPaintOrder(Tree.class, Kangaroo.class, MyWorld.class);
     }
     
+    // Increase score when jumping.
     public static void increaseScore()
     {
         score += 1;
         scoreLabel.setValue("In-air: " + score);
     }
     
+    // Get Score.
     public static int getScore()
     {
         return score;
     }
     
+    // Set live label.
     public static void decreaseLive(int x)
     {
         liveLabel.setValue("Live: " + Kangaroo.getLive());

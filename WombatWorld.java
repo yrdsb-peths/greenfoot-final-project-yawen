@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Wombat Shoot Game World.
  * 
  * @author Zhang
  * @version May 30
@@ -13,6 +13,7 @@ public class WombatWorld extends World
     Label scoreLabel;
     Label lifeLabel;
     public static int life = 3;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -21,6 +22,7 @@ public class WombatWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
+        
         
         lifeLabel = new Label("Life: 3", 25);
         addObject(lifeLabel, 67,270);

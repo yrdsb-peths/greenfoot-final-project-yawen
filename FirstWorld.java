@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class FirstWorld here.
+ * The menu of this game, choose game in this world.
+ * Control background Music.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Zhang
+ * @version June 7
  */
 public class FirstWorld extends World
 {
@@ -16,7 +17,6 @@ public class FirstWorld extends World
      */
     public FirstWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
         backgroundMusic.playLoop();
         
@@ -48,22 +48,10 @@ public class FirstWorld extends World
         addObject(game3, 450, 170);
     }
     
+    // Detect 1, 2, 3.
+    // 1 = Pokemon, 2 = Wombat, 3 = Horse.
     public void act()
     {
-        /*MouseInfo mouse =  Greenfoot.getMouseInfo();
-        if(mouse!=null) {
-            if(mouse.getX() == 40 && mouse.getY() == 290) {
-                backgroundMusic.stop();
-                addObject(new stopSound(), 40, 290);
-            }
-        }
-        if(mouse!=null) {
-            if(mouse.getX() == 60 && mouse.getY() == 290) {
-                backgroundMusic.playLoop();
-                addObject(new Sound(), 40, 290);
-            }
-        }*/
-        
         if(Greenfoot.isKeyDown("1") || Greenfoot.mouseClicked(Apple.class)) {
             PTTitleScreen titleScreen = new PTTitleScreen();
             Greenfoot.setWorld(titleScreen);
@@ -78,11 +66,13 @@ public class FirstWorld extends World
         }
     }
     
+    // Stop background Music.
     public static void stop()
     {
         backgroundMusic.stop();
     }
     
+    // Start background Music.
     public static void music()
     {
         backgroundMusic.playLoop();

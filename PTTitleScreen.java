@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Title Screen.
+ * Pokmeon Tag Title Screen.
  * 
  * @author Zhang
  * @version May 26
@@ -11,23 +11,26 @@ public class PTTitleScreen extends World
     Label titleLabel = new Label("Pokemon Tag", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
     Label instrucLabel = new Label("Use asdw & jkli", 25);
+    
     /**
      * Constructor for objects of class TitleScreen.
      * 
      */
     public PTTitleScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1); 
         
+        // Title Screen Game Description.
         addObject(titleLabel, getWidth()/2, 150);
         addObject(spaceLabel, getWidth()/2, 200);
         addObject(instrucLabel, getWidth()/2, 250);
+        
         prepare();
     }
     
     /**
      * The main world act loop.
+     * That is: create the game world.
      */
     public void act()
     {

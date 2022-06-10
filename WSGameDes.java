@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameDes here.
+ * Wombat Shoot Game Description.
  * 
  * @author Zhang
  * @version June 2
@@ -24,6 +24,7 @@ public class WSGameDes extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
         
+        // Game Descriptions.
         addObject(descriptionLabel0, 300, 70);
         addObject(descriptionLabel1, 300, 150);
         addObject(descriptionLabel2, 300, 180);
@@ -31,6 +32,7 @@ public class WSGameDes extends World
         addObject(descriptionLabel4, 300, 240);
         addObject(descriptionLabel5, 300, 270);
         
+        // Return arrow.
         WSReturn back = new WSReturn();
         addObject(back, 560, 297);
     }

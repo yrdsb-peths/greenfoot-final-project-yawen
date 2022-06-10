@@ -1,15 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * Wombat Shoot Game Over.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Zhang
+ * @version June 1
  */
 public class WSGameOver extends World
 {
     Label titleLabel = new Label("Game Over", 50);
     Label finalScoreLabel = new Label("Wombat killed: " + WombatWorld.getScore() + " bugs.", 35);
+    
     /**
      * Constructor for objects of class GameOver.
      * 
@@ -19,9 +20,13 @@ public class WSGameOver extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
         
+        // "Game Over".
         addObject(titleLabel, getWidth()/2, 100);
+        
+        // Shot bug number.
         addObject(finalScoreLabel, getWidth()/2, 200);
         
+        // Return arrow.
         WSReturn back = new WSReturn();
         addObject(back, 560, 297);
     }
