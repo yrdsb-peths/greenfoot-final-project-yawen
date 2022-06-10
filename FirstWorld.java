@@ -20,17 +20,17 @@ public class FirstWorld extends World
         super(600, 330, 1);
         backgroundMusic.playLoop();
         
-        Label welcomeLabel = new Label("Choose a game", 40);
+        Label welcomeLabel = new Label("Choose a game.", 40);
         addObject(welcomeLabel, 300, 100);
         
         Apple apple = new Apple();
-        addObject(apple, 100, 200);
+        addObject(apple, 150, 220);
         
         Bear bear = new Bear();
-        addObject(bear, 250, 200);
+        addObject(bear, 300, 220);
         
         Kangaroo kangaroo = new Kangaroo();
-        addObject(kangaroo, 400, 200);
+        addObject(kangaroo, 450, 220);
         
         Sound sound = new Sound();
         addObject(sound, 40, 290);
@@ -39,13 +39,13 @@ public class FirstWorld extends World
         addObject(stopsound, 100, 290);
         
         Label game1 = new Label("1", 25);
-        addObject(game1, 115, 150);
+        addObject(game1, 160, 170);
         
         Label game2 = new Label("2", 25);
-        addObject(game2, 255, 150);
+        addObject(game2, 300, 170);
         
         Label game3 = new Label("3", 25);
-        addObject(game3, 400, 150);
+        addObject(game3, 450, 170);
     }
     
     public void act()

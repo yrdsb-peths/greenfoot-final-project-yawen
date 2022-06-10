@@ -5,6 +5,7 @@ public class HorseWorld extends World
     // private int worldSpeed = 45;
     public static int score = 0;
     public static Label scoreLabel;
+    public static Label liveLabel;
     
     public void act()
     {
@@ -22,7 +23,8 @@ public class HorseWorld extends World
         scoreLabel = new Label(0, 25);
         addObject(scoreLabel, 530, 30);
         
-        // addObject(new Ground(), 300, 360);
+        liveLabel = new Label("Live: " + Kangaroo.getLive(), 25);
+        addObject(liveLabel, 50, 50);
         
         increaseScore();
         
@@ -39,5 +41,10 @@ public class HorseWorld extends World
     public static int getScore()
     {
         return score;
+    }
+    
+    public static void decreaseLive(int x)
+    {
+        liveLabel.setValue("Live: " + Kangaroo.getLive());
     }
 }

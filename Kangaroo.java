@@ -8,18 +8,20 @@ public class Kangaroo extends Actor
     
     private boolean start = true;
     static public boolean alive = true;
+    public static int live = 3;
     
     GreenfootImage[] jump = new GreenfootImage[6];
     
     SimpleTimer dodgeTime = new SimpleTimer();
     SimpleTimer animationTimer = new SimpleTimer();
-    public void act() 
+    public void act()
     {
         animateHorse();
         getImage().setTransparency(255);
         
         if(start)
         {
+            live = 3;
             alive=true;
             start=false;
         }
@@ -57,12 +59,19 @@ public class Kangaroo extends Actor
             }
             if(isTouching(Tree.class))
             {
-                if(!dodgeButton()) {
+                // System.out.println(live);
+                if(!dodgeButton() && live == 0) {
                     alive = false;
                     HMGameOver gameOverWorld = new HMGameOver();
                     Greenfoot.setWorld(gameOverWorld);
+                } else if(dodgeButton()) {
+                    alive = true;
+                } else {
+                    live = live - 1;
+                    HorseWorld world = (HorseWorld) getWorld();
+                    HorseWorld.decreaseLive(live);
+                    removeTouching(Tree.class);
                 }
-                // Game Over ************ create new world.
             }
         }
     }
@@ -115,5 +124,10 @@ public class Kangaroo extends Actor
             return true;
         }
         return false;
+    }
+    
+    public static int getLive()
+    {
+        return live;
     }
 }
