@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class FirstWorld extends World
 {
-    Label welcomeLabel = new Label("Choose a game", 40);
     public static GreenfootSound backgroundMusic = new GreenfootSound("background music v2.mp3");
     
     /**
@@ -21,6 +20,7 @@ public class FirstWorld extends World
         super(600, 330, 1);
         backgroundMusic.playLoop();
         
+        Label welcomeLabel = new Label("Choose a game", 40);
         addObject(welcomeLabel, 300, 100);
         
         Apple apple = new Apple();
@@ -31,10 +31,39 @@ public class FirstWorld extends World
         
         Kangaroo kangaroo = new Kangaroo();
         addObject(kangaroo, 400, 200);
+        
+        Sound sound = new Sound();
+        addObject(sound, 40, 290);
+        
+        stopSound stopsound = new stopSound();
+        addObject(stopsound, 100, 290);
+        
+        Label game1 = new Label("1", 25);
+        addObject(game1, 115, 150);
+        
+        Label game2 = new Label("2", 25);
+        addObject(game2, 255, 150);
+        
+        Label game3 = new Label("3", 25);
+        addObject(game3, 400, 150);
     }
     
     public void act()
     {
+        /*MouseInfo mouse =  Greenfoot.getMouseInfo();
+        if(mouse!=null) {
+            if(mouse.getX() == 40 && mouse.getY() == 290) {
+                backgroundMusic.stop();
+                addObject(new stopSound(), 40, 290);
+            }
+        }
+        if(mouse!=null) {
+            if(mouse.getX() == 60 && mouse.getY() == 290) {
+                backgroundMusic.playLoop();
+                addObject(new Sound(), 40, 290);
+            }
+        }*/
+        
         if(Greenfoot.isKeyDown("1") || Greenfoot.mouseClicked(Apple.class)) {
             PTTitleScreen titleScreen = new PTTitleScreen();
             Greenfoot.setWorld(titleScreen);
@@ -47,16 +76,14 @@ public class FirstWorld extends World
             HMTitleScreen titleScreen = new HMTitleScreen();
             Greenfoot.setWorld(titleScreen);
         }
-        
-        music();
     }
     
     public static void stop()
     {
-        backgroundMusic.pause();
+        backgroundMusic.stop();
     }
     
-    public void music()
+    public static void music()
     {
         backgroundMusic.playLoop();
     }

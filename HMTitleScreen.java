@@ -10,6 +10,7 @@ public class HMTitleScreen extends World
 {
     Label titleLabel = new Label("Horse Marathon", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
+    Label instrucLabel = new Label("Use space & a", 25);
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -21,6 +22,7 @@ public class HMTitleScreen extends World
         
         addObject(titleLabel, getWidth()/2, 150);
         addObject(spaceLabel, getWidth()/2, 200);
+        addObject(instrucLabel, getWidth()/2, 250);
         prepare();
     }
     

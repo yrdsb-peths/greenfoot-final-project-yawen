@@ -8,8 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class WSTitleScreen extends World
 {
-    Label titleLabel = new Label("Let's Game", 50);
+    Label titleLabel = new Label("Shooter Wombat", 50);
     Label spaceLabel = new Label("Press <space> to Start", 25);
+    Label instrucLabel = new Label("Use asdw & space", 25);
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -21,6 +22,7 @@ public class WSTitleScreen extends World
         
         addObject(titleLabel, getWidth()/2, 150);
         addObject(spaceLabel, getWidth()/2, 200);
+        addObject(instrucLabel, getWidth()/2, 250);
         prepare();
     }
     
@@ -44,7 +46,7 @@ public class WSTitleScreen extends World
     private void prepare()
     {
         Bear bear = new Bear();
-        addObject(bear, 460, 110);
+        addObject(bear, 114, 247);
         
         WSDescription description = new WSDescription();
         addObject(description, 560, 290);

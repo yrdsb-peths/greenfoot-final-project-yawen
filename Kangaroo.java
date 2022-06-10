@@ -16,6 +16,7 @@ public class Kangaroo extends Actor
     public void act() 
     {
         animateHorse();
+        getImage().setTransparency(255);
         
         if(start)
         {
@@ -107,6 +108,7 @@ public class Kangaroo extends Actor
         if(Greenfoot.isKeyDown("a"))
         {
             dodgeTime.mark();
+            getImage().setTransparency(50);
             if(dodgeTime.millisElapsed() == 3000) {
                 return false;
             }
