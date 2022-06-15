@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PTGameDes extends World
 {
-    Label descriptionLabel0 = new Label("Chaser Pikachu", 50);
+    Label descriptionLabel0 = new Label("Pokemon Tag", 50);
     Label descriptionLabel1 = new Label("Pikachu is the chaser, catch the grey pokemon !", 20);
     Label descriptionLabel2 = new Label("The grey Pokemon is the runner, run away from Pikachu !", 20);
     Label descriptionLabel3 = new Label("1 score is gained when Pikachu catched the grey Pokemon", 20);
