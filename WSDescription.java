@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Description here.
+ * Game Description Button in Wombat Shoot.
  * 
  * @author Zhang
  * @version June 2

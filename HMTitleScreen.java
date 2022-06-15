@@ -32,6 +32,7 @@ public class HMTitleScreen extends World
     /**
      * The main world act loop.
      * That is: create the game world.
+     * 
      */
     public void act()
     {
@@ -45,6 +46,7 @@ public class HMTitleScreen extends World
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
+     * 
      */
     private void prepare()
     {

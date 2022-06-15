@@ -1,5 +1,11 @@
 import greenfoot.*;
 
+/**
+ * The Kangaroo.
+ * 
+ * @author Zhang
+ * @version June 7
+ */
 public class Kangaroo extends Actor
 {
     private int jumpCounter = 0; // jump height.
@@ -14,6 +20,12 @@ public class Kangaroo extends Actor
     
     SimpleTimer dodgeTime = new SimpleTimer();
     SimpleTimer animationTimer = new SimpleTimer();
+    
+    /**
+     * Kangaroo will jump when 'space';
+     * Kangaroo will dodge when 'a';
+     * Kangaroo will die when touches the tree.
+     */
     public void act()
     {
         animateHorse();
@@ -76,6 +88,9 @@ public class Kangaroo extends Actor
         }
     }
     
+    /**
+     * Constructor - The code that gets run one time when object is created.
+     */
     public Kangaroo()
     {
         setRotation(270);
@@ -90,6 +105,9 @@ public class Kangaroo extends Actor
         }
     }
     
+    /**
+     * Animate the Kangaroo.
+     */
     int imageIndex = 0;
     public void animateHorse()
     {
@@ -101,7 +119,10 @@ public class Kangaroo extends Actor
         imageIndex = (imageIndex + 1) % jump.length;
     }
     
-    private boolean jumpButton()
+    /**
+     * Tells Kangaroo to jump when 'space'.
+     */
+    public boolean jumpButton()
     {
         if(Greenfoot.isKeyDown("space"))
         {
@@ -112,7 +133,10 @@ public class Kangaroo extends Actor
         return false;
     }
     
-    private boolean dodgeButton()
+    /**
+     * Tells Kangaroo to dodge when 'a'.
+     */
+    public boolean dodgeButton()
     {
         if(Greenfoot.isKeyDown("a"))
         {
@@ -126,6 +150,9 @@ public class Kangaroo extends Actor
         return false;
     }
     
+    /**
+     * Get current lives of Kangaroo.
+     */
     public static int getLive()
     {
         return live;

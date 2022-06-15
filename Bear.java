@@ -51,8 +51,7 @@ public class Bear extends Actor
     }
     
     /**
-     * Act - do whatever the Bear wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Tells the bear to move when 'asdw'.
      */
     public void act()
     {
@@ -70,6 +69,9 @@ public class Bear extends Actor
         animateBear();
     }
     
+    /**
+     * Let the bear move with asdw on keyboard.
+     */
     public void move()
     {
         if(Greenfoot.isKeyDown("d"))

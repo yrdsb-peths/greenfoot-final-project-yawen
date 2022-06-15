@@ -10,8 +10,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bullet extends Actor
 {
     /**
-     * Act - do whatever the Bullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Shoot bullets from the bear actor.
+     * Kills enemy when intersect.
      */
     public void act()
     {
@@ -34,6 +34,9 @@ public class Bullet extends Actor
         setImage(img);
     }
     
+    /**
+     * Check if bullet touches the enemy.
+     */
     public void eat()
     {
         if(isTouching(Enemy.class)) {

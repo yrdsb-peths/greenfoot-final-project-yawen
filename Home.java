@@ -21,7 +21,6 @@ public class Home extends Actor
         
         if(Greenfoot.mouseClicked(this)) {
             Greenfoot.setWorld(new FirstWorld());
-            //FirstWorld.stop();
         }
     }
 }

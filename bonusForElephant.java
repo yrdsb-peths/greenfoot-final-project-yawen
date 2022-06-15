@@ -1,18 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The Pokemon I don't know the name.
+ * Add speed to Pokemon when intersect.
  * 
  * @author Zhang
- * @version May 25
+ * @version May 27
  */
 public class bonusForElephant extends Actor
 {
-    /**
-     * Act - do whatever the Elephant wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
     // GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
     GreenfootImage[] award = new GreenfootImage[4];
     
@@ -48,6 +43,9 @@ public class bonusForElephant extends Actor
         animationTimer.mark();
     }
     
+    /**
+     * Act method.
+     */
     public void act()
     {
         // Animate the elephant.

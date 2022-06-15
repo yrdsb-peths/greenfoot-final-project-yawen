@@ -1,6 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-
 /**
  * A Label class that allows you to display a textual value on screen.
  * 
@@ -8,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * in Greenfoot.  If you keep a reference to the Label then you can change the text it
  * displays.  
  *
- * @author Amjad Altadmri 
+ * @author Amjad Altadmri
  * @version 1.1
  */
 public class Label extends Actor
@@ -16,7 +15,7 @@ public class Label extends Actor
     private String value;
     private int fontSize;
     private Color lineColor = Color.BLACK;
-    private Color fillColor = Color.WHITE;
+    private Color fillColor = Color.BLACK;
     
     private static final Color transparent = new Color(0,0,0,0);
 

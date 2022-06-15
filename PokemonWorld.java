@@ -51,7 +51,9 @@ public class PokemonWorld extends World
         addObject(a, Greenfoot.getRandomNumber(300), Greenfoot.getRandomNumber(300));
     }
     
-    // Spawn new runner to the Game World.
+    /**
+     * Spawn new runner to the Game World.
+     */
     public void spawnApple()
     {
         int x = Greenfoot.getRandomNumber(580);
@@ -61,7 +63,9 @@ public class PokemonWorld extends World
         addObject(elephant, x, y);
     }
     
-    // Increase Score and check score status.
+    /**
+     * Increase Score and check score status.
+     */
     public void increaseScore()
     {
         score++;
@@ -87,19 +91,25 @@ public class PokemonWorld extends World
         }
     }
     
-    // Increase Pikachu speed.
+    /**
+     * Increase Chaser speed.
+     */
     public void increaseAppleSpeed()
     {
         appleSpeedLabel.setValue("Chaser Speed: " + Apple.getSpd());
     }
     
-    // Increase Elephatn speed.
+    /**
+     * Increase Runner speed.
+     */
     public void increaseElephantSpeed()
     {
         elephantSpeedLabel.setValue("Runner Speed: " + Elephant.getSpd());
     }
     
-    // Get runner survived time.
+    /**
+     * Get current Runner survived time.
+     */
     public static int getGameTime()
     {
         return gameTime.millisElapsed()/1000;

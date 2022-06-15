@@ -8,11 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Actor
 {
-    /**
-     * Act - do whatever the Elephant wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
     public static int size = 70;
     public static int speed = 3;
     
@@ -66,6 +61,10 @@ public class Apple extends Actor
         }
     }
     
+    /**
+     * Tells the chaser to move when 'asdw'.
+     * Check touch status (Runner, Satoshi, Bomb).
+     */
     public void act()
     {
         // Add your action code here.
@@ -97,6 +96,9 @@ public class Apple extends Actor
         animateElephant();
     }
     
+    /**
+     * Check if chaser touches runner.
+     */
     public void eat()
     {
         // check if apple is touching elephant
@@ -105,20 +107,12 @@ public class Apple extends Actor
             PokemonWorld world = (PokemonWorld) getWorld();
             world.spawnApple();
             world.increaseScore();
-            // elephantSound.play();
         }
     }
 
-    /*public void getSize()
-    {
-        // check if apple - pikachu is touching cabbage
-        if(isTouching(bonusForApple.class)) {
-            removeTouching(bonusForApple.class);
-            MyWorld world = (MyWorld) getWorld();
-            world.spawnPower();
-        }
-    }*/
-
+    /**
+     * Check if chaser touches Satoshi.
+     */
     public void getSpeed()
     {
         // check if elephant - pokemon is touching xiaozhi
@@ -130,6 +124,9 @@ public class Apple extends Actor
         }
     }
     
+    /**
+     * Check if chaser touches the bomb.
+     */
     public void getBomb()
     {
         if(isTouching(Bomb.class)) {
@@ -139,6 +136,9 @@ public class Apple extends Actor
         }
     }
     
+    /**
+     * Get current chaser speed.
+     */
     public static int getSpd()
     {
         return speed;

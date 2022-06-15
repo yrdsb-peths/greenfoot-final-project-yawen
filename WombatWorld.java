@@ -23,7 +23,6 @@ public class WombatWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 330, 1);
         
-        
         lifeLabel = new Label("Life: 3", 25);
         addObject(lifeLabel, 67,270);
         
@@ -41,6 +40,9 @@ public class WombatWorld extends World
         spawnEnemy();
     }
     
+    /**
+     * Spawn an enemy to the Game World.
+     */
     public void spawnEnemy()
     {
         Enemy enemy = new Enemy();
@@ -49,12 +51,18 @@ public class WombatWorld extends World
         addObject(enemy, x, y);
     }
     
+    /**
+     * Increase Score.
+     */
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
     }
     
+    /**
+     * Decrease Live.
+     */
     public void decreaseLife()
     {
         if(life <= 1)
@@ -65,14 +73,19 @@ public class WombatWorld extends World
         life--;
         lifeLabel.setValue("Life: " + life);
         spawnEnemy();
-        // System.out.println(life);
     }
     
+    /**
+     * Set how many lives are left for the Base.
+     */
     public void setLife(int x)
     {
         life = x;
     }
     
+    /**
+     * Get current score.
+     */
     public static int getScore()
     {
         return score;

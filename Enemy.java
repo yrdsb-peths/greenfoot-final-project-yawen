@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Enemy here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Zhang
+ * @version June 2
  */
 public class Enemy extends Actor
 {
@@ -68,13 +68,4 @@ public class Enemy extends Actor
         
         animateOctupus();
     }
-    
-    /*public Enemy()
-    {
-        GreenfootImage img = new GreenfootImage("fly.png");
-        img.scale(img.getWidth()/2, img.getHeight()/2);
-        setImage(img);
-        
-    }*/
-    
 }

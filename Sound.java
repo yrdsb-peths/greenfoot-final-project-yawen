@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Sound here.
+ * Control the background music. (start)
  * 
  * @author Zhang
  * @version June 9
@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Sound extends Actor
 {
     /**
-     * Act - do whatever the Sound wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * When clicked, play background music.
      */
     public void act()
     {

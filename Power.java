@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Power here.
  * 
- * @author (your name) 
+ * @author Zhang
  * @version (a version number or a date)
  */
 public class Power extends Actor

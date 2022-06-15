@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Return here.
+ * Return botton in Pokemon Tag.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Zhang
+ * @version May 30
  */
 public class PTReturn extends Actor
 {

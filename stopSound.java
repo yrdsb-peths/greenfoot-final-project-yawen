@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class stopSound here.
+ * Control the background music. (stop)
  * 
  * @author Zhang
  * @version June 9
@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class stopSound extends Actor
 {
     /**
-     * Act - do whatever the stopSound wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * When clicked, stop background music.
      */
     public void act()
     {

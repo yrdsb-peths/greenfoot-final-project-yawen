@@ -7,12 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version May 25
  */
 public class Elephant extends Actor
-{
-    /**
-     * Act - do whatever the Elephant wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
+{   
     public static int size = 45;
     public static int speed = 3;
     
@@ -66,6 +61,10 @@ public class Elephant extends Actor
         }
     }
     
+    /**
+     * Tells the runner to move when 'jkli'.
+     * Check touch status (Chaser, Satoshi, Bomb).
+     */
     public void act()
     {
         // Add your action code here.
@@ -94,6 +93,9 @@ public class Elephant extends Actor
         animateElephant();
     }
     
+    /**
+     * Check if runner touches Satoshi.
+     */
     public void getSpeed()
     {
         // check if elephant - pokemon is touching xiaozhi
@@ -105,6 +107,9 @@ public class Elephant extends Actor
         }
     }
     
+    /**
+     * Check if runner touches the bomb.
+     */
     public void getBomb()
     {
         if(isTouching(Bomb.class)) {
@@ -114,6 +119,9 @@ public class Elephant extends Actor
         }
     }
     
+    /**
+     * Get current runner speed.
+     */
     public static int getSpd()
     {
        return speed;

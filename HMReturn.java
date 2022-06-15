@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Return here.
+ * Return button in Horse Marathon.
  * 
  * @author Zhang
  * @version June 7

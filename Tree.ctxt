@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=Tree
+comment0.text=\n\ The\ Tree(s).\n\ \n\ @author\ Zhang\n\ @version\ June\ 7\n
 comment1.params=
 comment1.target=void\ act()
+comment1.text=\n\ Will\ add\ tree\ to\ world\ randomly,\n\ After\ the\ tree\ is\ added,\ move\ to\ the\ left\ with\ speed\ of\ 6.\n
 numComments=2
