@@ -10,6 +10,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class FirstWorld extends World
 {
     public static GreenfootSound backgroundMusic = new GreenfootSound("background music v2.mp3");
+    Label playThis = new Label("to play this", 20);
     
     /**
      * Constructor for objects of class FirstWorld.
@@ -38,14 +39,18 @@ public class FirstWorld extends World
         stopSound stopsound = new stopSound();
         addObject(stopsound, 100, 290);
         
-        Label game1 = new Label("Type 1", 25);
+        Label game1 = new Label("Press 1", 25);
         addObject(game1, 160, 170);
         
-        Label game2 = new Label("Type 2", 25);
+        Label game2 = new Label("Press 2", 25);
         addObject(game2, 300, 170);
         
-        Label game3 = new Label("Type 3", 25);
+        Label game3 = new Label("Press 3", 25);
         addObject(game3, 450, 170);
+        
+        addObject(playThis, 160, 255);
+        addObject(playThis, 300, 255);
+        addObject(playThis, 450, 255);
     }
     
     // Detect 1, 2, 3.

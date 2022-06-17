@@ -115,7 +115,7 @@ public class Elephant extends Actor
         if(isTouching(Bomb.class)) {
             PTGameOver gameOverWorld = new PTGameOver();
             Greenfoot.setWorld(gameOverWorld);
-            PTGameOver.isBomb.setValue("The chaser touches the bomb.");
+            PTGameOver.isBomb.setValue("The runner touches the bomb.");
         }
     }
     
