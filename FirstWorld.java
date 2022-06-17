@@ -48,9 +48,14 @@ public class FirstWorld extends World
         Label game3 = new Label("Press 3", 25);
         addObject(game3, 450, 170);
         
-        addObject(playThis, 160, 255);
-        addObject(playThis, 300, 255);
-        addObject(playThis, 450, 255);
+        Label playThis1 = new Label("to play this", 20);
+        addObject(playThis1, 160, 260);
+        
+        Label playThis2 = new Label("to play this", 20);
+        addObject(playThis2, 300, 260);
+        
+        Label playThis3 = new Label("to play this", 20);
+        addObject(playThis3, 450, 260);
     }
     
     // Detect 1, 2, 3.
