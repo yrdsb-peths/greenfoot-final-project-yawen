@@ -21,9 +21,13 @@ public class WSGameOver extends World
         super(600, 330, 1);
         
         // "Game Over".
+        titleLabel.setLineColor(Color.WHITE);
+        titleLabel.setFillColor(Color.WHITE);
         addObject(titleLabel, getWidth()/2, 100);
         
         // Shot bug number.
+        finalScoreLabel.setLineColor(Color.WHITE);
+        finalScoreLabel.setFillColor(Color.WHITE);
         addObject(finalScoreLabel, getWidth()/2, 200);
         
         // Return arrow.

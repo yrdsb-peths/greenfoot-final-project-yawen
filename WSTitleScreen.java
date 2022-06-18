@@ -22,8 +22,14 @@ public class WSTitleScreen extends World
         super(600, 330, 1); 
         
         // Title Screen Game Description.
+        titleLabel.setLineColor(Color.WHITE);
+        titleLabel.setFillColor(Color.WHITE);
         addObject(titleLabel, getWidth()/2, 150);
+        spaceLabel.setLineColor(Color.WHITE);
+        spaceLabel.setFillColor(Color.WHITE);
         addObject(spaceLabel, getWidth()/2, 200);
+        instrucLabel.setLineColor(Color.WHITE);
+        instrucLabel.setFillColor(Color.WHITE);
         addObject(instrucLabel, getWidth()/2, 250);
         
         prepare();

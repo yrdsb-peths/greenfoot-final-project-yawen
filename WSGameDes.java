@@ -25,6 +25,7 @@ public class WSGameDes extends World
         super(600, 330, 1);
         
         // Game Descriptions.
+
         addObject(descriptionLabel0, 300, 70);
         addObject(descriptionLabel1, 300, 150);
         addObject(descriptionLabel2, 300, 180);

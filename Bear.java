@@ -56,7 +56,7 @@ public class Bear extends Actor
     public void act()
     {
         // Add your action code here.
-        if(WombatWorld.shootTime.millisElapsed() > 250 && (Greenfoot.isKeyDown("space")))
+        if(WombatWorld.shootTime.millisElapsed() > 450 && (Greenfoot.isKeyDown("space")))
         {
             getWorld().addObject(new Bullet(), getX(), getY());
             // animateBear();
